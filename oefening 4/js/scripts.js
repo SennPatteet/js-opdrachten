@@ -1,6 +1,9 @@
-// VARIABLES -------------------------------------------------------------
-let name = prompt("What is your name?");
-let firstName = prompt("What is your first name?");
-let city = prompt("What city do you live in?");
 
-alert(`Name        : ${name}\nFirstname : ${firstName}\nCity           : ${city}`);
+let name = document.getElementById("name");
+let firstName = document.getElementById("firstName");
+let city = document.getElementById("city");
+
+
+document.getElementById("validate").onclick = function getUserInput() {
+    alert( `Name: ${name.value}\nFirstname: ${firstName.value}\nCity: ${city.value}` );
+};
